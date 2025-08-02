@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untukmu, Cintaku</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffe0ec, #ffc0cb);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to bottom, #ffd6e0, #ffe9f0);
+      text-align: center;
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #d6336c;
+      z-index: 2;
+      position: relative;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      z-index: 2;
+      position: relative;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      color: #e91e63;
+      margin-bottom: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .quote {
+      background-color: #fff1f7;
+      padding: 3rem;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: 2rem auto;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #6b003b;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      position: relative;
+      z-index: 2;
+    }
+    footer {
+      background-color: #fff0f5;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .typing {
+      border-right: .15em solid #d6336c;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 6s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #d6336c; }
+    }
+
+    /* Animasi partikel hati */
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .heart {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+    }
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: pink;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -7.5px;
+      left: 0;
+    }
+    .heart::after {
+      left: -7.5px;
+      top: 0;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles"></div>
+  <header>
+    <h1>Untukmu, Ariffa Istiazha Viona Saputra</h1>
+    <p class="typing">Kamu adalah bab terindah dalam buku hidupku🤭🤭🩷🩷
+</p>
+  </header>
+
+  <section>
+    <h2>Parasmu Yang Indah</h2>
+    <div class="gallery">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.53_e9383fcf.jpg" alt="Foto 1">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.54_1c0a0b0d.jpg" alt="Foto 2">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.54_89ae2427.jpg" alt="Foto 3">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.55_1554922e.jpg" alt="Foto 4">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.55_b4b2356c.jpg" alt="Foto 5">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.58_967db2d4.jpg" alt="Foto 6">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 16.01.40_77506d98.jpg" alt="Foto 7">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.47.36_472548e2.jpg" alt="Foto 8">
+      
+    </div>
+  </section>
+
+  <section>
+   
+    <div class="quote">
+      Terima kasih telah hadir dalam hidupku. Aku tidak bisa membayangkan hari-hariku tanpamu. Denganmu, dunia terasa lebih indah, lebih damai, dan lebih penuh cinta. 🤭🤭🩷🩷 salting plsss
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Kebersamaan🤭🤭</h2>
+    <div class="gallery">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.56_5aabaa27.jpg" alt="Anniversary 1">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.56_e4b87dbc.jpg" alt="Anniversary 2">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.58_9ef1b142.jpg" alt="Anniversary 3">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.46.58_13d2f819.jpg" alt="Anniversary 4">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.47.00_e7db1955.jpg" alt="Anniversary 5">
+      <img src="d:\aboutyou\WhatsApp Image 2025-08-02 at 15.47.01_85aeebdb.jpg" alt="Anniversary 6">
+    </div>
+  </section>
+
+
+  <footer>
+    Dibuat dengan cinta, untuk cinta sejatiku. ❤️ aaaaaaaaaa<br>
+    &copy; Kita Akan Bersama Selamanya
+  </footer>
+
+  <script>
+    // Hati animasi
+    const particles = document.getElementById("particles");
+    for (let i = 0; i < 50; i++) {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 5 + 5) + "s";
+      heart.style.opacity = Math.random();
+      heart.style.fontSize = Math.random() * 10 + 10 + "px";
+      particles.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
